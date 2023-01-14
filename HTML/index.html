@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>NativaTalk | Language Course</title>
+  <link rel="shortcut icon" href="../IMG/Logo Kotak.png">
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- FONT -->
+
+  <!-- CSS -->
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+  <!-- CDNJS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.8/swiper-bundle.min.css">
+
+  <!-- Aos -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- My CSS -->
+  <link rel="stylesheet" href="../CSS/style.css">
+  <!-- CSS -->
+</head>
+
+<body>
+  <main>
+
+    <!-- LOG IN -->
+    <div class="content">
+      <div class="login">
+        <div class="login-container" id="popup">
+          <div class="wrapper">
+            <div class="close">
+              <i class="fas fa-times" onclick="toggle()"></i>
+            </div>
+            <div class="title-text">
+              <div class="title login">
+                Welcome Back!
+              </div>
+              <div class="title signup">
+                Create Account
+              </div>
+            </div>
+            <div class="form-container">
+              <div class="slide-controls">
+                <input type="radio" name="slide" id="login" checked>
+                <input type="radio" name="slide" id="signup">
+                <label for="login" class="slide login">Log in</label>
+                <label for="signup" class="slide signup">Sign up</label>
+                <div class="slider-tab"></div>
+              </div>
+              <div class="form-inner">
+                <form action="user.php" method="post" class="login">
+                  <div class="field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                  </div>
+                  <div class="field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="password" placeholder="Password" required>
+                  </div>
+                  <!-- <div class="pass-link">
+                    <a href="#">Forgot password?</a>
+                    </div> -->
+                  <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <input type="submit" name="login" value="Log in">
+                  </div>
+                  <div class="with-socmed">
+                    <a href="#"><i class="fab fa-google"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </div>
+                  <div class="signup-link">
+                    Don't have an account? <a href="">Sign up</a>
+                  </div>
+                </form>
+                <form action="user.php" method="post" class="signup">
+                  <div class="field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="name" placeholder="Full Name" required>
+                  </div>
+                  <div class="field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                  </div>
+                  <div class="field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="password" placeholder="Password" required>
+                  </div>
+                  <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <input type="submit" name="signup" value="Sign up">
+                  </div>
+                  <div class="with-socmed" id="with-socmed-signup">
+                    <a href="#"><i class="fab fa-google"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </div>
+                  <!-- <div class="login-link">
+                      Already have an account? <a href="">Log in</a>
+                    </div> -->
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- LOG IN -->
+
+    <!-- CONTACT US -->
+    <div class="contact-us">
+      <div class="container" id="popup-contact-us">
+        <div class="cu-wrapper">
+          <div class="cu-content">
+            <div class="close">
+              <i class="fas fa-times" onclick="toggle2()"></i>
+            </div>
+            <div class="left-side">
+              <div class="address details" id="alamat">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="topic">Alamat</div>
+                <div class="text-one">Anggrek Loka, Jl. Anggrek Lili Blok AF No. 25, RT 01 RW 12, Kelurahan Rawa Buntu, Kecamatan Serpong, Kota Tangerang Selatan, Banten, 15318, Indonesia</div>
+              </div>
+              <div class="phone details">
+                <i class="fab fa-whatsapp"></i>
+                <div class="topic">WhatsApp</div>
+                <div class="text-one">+62 859-2120-2350</div>
+              </div>
+              <div class="email details">
+                <i class="fas fa-envelope"></i>
+                <div class="topic">Email</div>
+                <div class="text-one">support@nativatalk.com</div>
+              </div>
+            </div>
+            <div class="right-side">
+              <div class="topic-text">Hubungi Kami</div>
+              <p>Jika NativaTalker memiliki pertanyaan atau masukan, silakan mengirimkan pesan kepada kami.</p>
+              <form action="contact_us.php" method="post">
+                <div class="form-row">
+                  <div class="input-data">
+                    <input type="text" name="first_name" required>
+                    <div class="underline"></div>
+                    <label>First Name</label>
+                  </div>
+                  <div class="input-data">
+                    <input type="text" name="last_name" required>
+                    <div class="underline"></div>
+                    <label>Last Name</label>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="input-data">
+                    <input type="email" name="email" required>
+                    <div class="underline"></div>
+                    <label>Email Address</label>
+                  </div>
+                  <div class="input-data">
+                    <input type="number" name="phone_number" required>
+                    <div class="underline"></div>
+                    <label>Phone Number</label>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="input-data textarea">
+                    <textarea name="message" cols="30" rows="10" required></textarea>
+                    <div class="underline"></div>
+                    <label>Write your message</label>
+                  </div>
+                </div>
+                <div class="form-row submit-btn">
+                  <div class="input-data">
+                    <div class="inner"></div>
+                    <input type="submit" name="submit" value="Kirim">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CONTACT US -->
+
+    <div class="big-wrapper light" id="blur">
+      <!-- EMAIL ICON -->
+      <div class="email_icon" onclick="toggle2()">
+        <!-- <div class="email_img" onclick="toggle()"><ion-icon name="chatboxes"></ion-icon></div> -->
+        <div class="email_img">
+          <ion-icon name="chatboxes"></ion-icon>
+        </div>
+      </div>
+      <!-- EMAIL ICON -->
+
+      <!-- NAVBAR -->
+      <header>
+        <div class="container">
+          <div class="logo">
+            <a href="./index.html"><img src="../IMG/Logo 3.png" alt="Logo"></a>
+          </div>
+          <div class="links">
+            <ul>
+              <li><a href="#kelas" class="link">Kelas</a></li>
+              <li><a href="#harga" class="link">Daftar Sekarang</a></li>
+              <li><a href="#faq" class="link">FAQ</a></li>
+              <li><a href="#review" class="link">Testimonial</a></li>
+              <li><a href="#" class="btn" onclick="toggle()">Log in</a></li>
+            </ul>
+          </div>
+          <div class="overlay"></div>
+          <div class="hamburger-menu">
+            <div class="bar"></div>
+          </div>
+        </div>
+      </header>
+      <!-- NAVBAR -->
+
+      <!-- SHOWCASE AREA -->
+      <div class="showcase-area">
+        <div class="container">
+          <div class="left">
+            <div class="big-title">
+              <h1>Siap <span>Menemanimu</span><br>dalam Belajar Bahasa</h1>
+              <h4>Bersama ribuan NativaTalker lainnya</h4>
+            </div>
+            <div class="cta">
+              <a href="#harga" class="btn">Join Now</a>
+            </div>
+          </div>
+          <div class="right">
+            <img src="../IMG/Slogan 1.png" alt="Person Image" class="person" />
+          </div>
+        </div>
+      </div>
+      <div class="bottom-area">
+        <div class="container">
+          <button class="toggle-btn">
+          </button>
+        </div>
+      </div>
+      <!-- SHOWCASE AREA -->
+
+      <!-- KELAS -->
+      <div class="judulkelas" id="kelas">
+        <div class="container">
+          <h1>Pilihlah Kelasmu</h1>
+        </div>
+      </div>
+      <div class="kelas" data-aos="fade-up">
+        <div class="container" id="khususkelas">
+
+          <div class="card">
+            <div class="price-corner"></div>
+            <div class="img-wrapper">
+              <img src="../IMG/UK.png" alt="English" id="UK">
+            </div>
+            <div class="content-wrapper">
+              <h3 class="title">Bahasa Inggris</h3>
+              <p class="price">English</p>
+              <div class="inner-content-wrapper">
+                <div class="container">
+                  <div>
+                    <p id="tipekelas">Regular</p>
+                    <p class="btn2" id="hargakelas">Rp50K</p>
+                  </div>
+                  <div>
+                    <p id="tipekelas">Private</p>
+                    <p class="btn2" id="hargakelas">Rp80K</p>
+                  </div>
+                </div>
+                <div class="icons">
+                  <span class="icon icon1"><a href="./english.html" target="_blank"><i class="fas fa-info-circle"></i></a></span>
+                  <!-- <span class="icon icon2"><i class="fas fa-cart-plus"></i></span> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="price-corner"></div>
+            <div class="img-wrapper">
+              <img src="../IMG/Japan.png" alt="Japanese" id="Japan">
+            </div>
+            <div class="content-wrapper">
+              <h3 class="title">Bahasa Jepang</h3>
+              <p class="price">日本語</p>
+              <div class="inner-content-wrapper">
+                <div class="container">
+                  <div>
+                    <p id="tipekelas">Regular</p>
+                    <p class="btn2" id="hargakelas">Rp50K</p>
+                  </div>
+                  <div>
+                    <p id="tipekelas">Private</p>
+                    <p class="btn2" id="hargakelas">Rp80K</p>
+                  </div>
+                </div>
+                <div class="icons">
+                  <span class="icon icon1"><a href="./japanese.html" target="_blank"><i class="fas fa-info-circle"></i></a></span>
+                  <!-- <span class="icon icon2"><i class="fas fa-cart-plus"></i></span> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="price-corner"></div>
+            <div class="img-wrapper">
+              <img src="../IMG/Germany.png" alt="German" id="Germany">
+            </div>
+            <div class="content-wrapper">
+              <h3 class="title">Bahasa Jerman</h3>
+              <p class="price">Deutsch</p>
+              <div class="inner-content-wrapper">
+                <div class="container">
+                  <div>
+                    <p id="tipekelas">Regular</p>
+                    <p class="btn2" id="hargakelas">Rp50K</p>
+                  </div>
+                  <div>
+                    <p id="tipekelas">Private</p>
+                    <p class="btn2" id="hargakelas">Rp80K</p>
+                  </div>
+                </div>
+                <div class="icons">
+                  <span class="icon icon1"><a href="./german.html" target="_blank"><i class="fas fa-info-circle"></i></a></span>
+                  <!-- <span class="icon icon2"><i class="fas fa-cart-plus"></i></span> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="price-corner"></div>
+            <div class="img-wrapper">
+              <img src="../IMG/China.png" alt="Mandarin" id="China">
+            </div>
+            <div class="content-wrapper">
+              <h3 class="title">Bahasa Mandarin</h3>
+              <p class="price">中文</p>
+              <div class="inner-content-wrapper">
+                <div class="container">
+                  <div>
+                    <p id="tipekelas">Regular</p>
+                    <p class="btn2" id="hargakelas">Rp50K</p>
+                  </div>
+                  <div>
+                    <p id="tipekelas">Private</p>
+                    <p class="btn2" id="hargakelas">Rp80K</p>
+                  </div>
+                </div>
+                <div class="icons">
+                  <span class="icon icon1"><a href="./mandarin.html" target="_blank"><i class="fas fa-info-circle"></i></a></span>
+                  <!-- <span class="icon icon2"><i class="fas fa-cart-plus"></i></span> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="price-corner"></div>
+            <div class="img-wrapper">
+              <img src="../IMG/France.png" alt="French" id="France">
+            </div>
+            <div class="content-wrapper">
+              <h3 class="title">Bahasa Perancis</h3>
+              <p class="price">français</p>
+              <div class="inner-content-wrapper">
+                <div class="container">
+                  <div>
+                    <p id="tipekelas">Regular</p>
+                    <p class="btn2" id="hargakelas">Rp50K</p>
+                  </div>
+                  <div>
+                    <p id="tipekelas">Private</p>
+                    <p class="btn2" id="hargakelas">Rp80K</p>
+                  </div>
+                </div>
+                <div class="icons">
+                  <span class="icon icon1"><a href="./french.html" target="_blank"><i class="fas fa-info-circle"></i></a></span>
+                  <!-- <span class="icon icon2"><i class="fas fa-cart-plus"></i></span> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="price-corner"></div>
+            <div class="img-wrapper">
+              <img src="../IMG/Russia.png" alt="Russian" id="Russia">
+            </div>
+            <div class="content-wrapper">
+              <h3 class="title">Bahasa Rusia</h3>
+              <p class="price">русский</p>
+              <div class="inner-content-wrapper">
+                <div class="container">
+                  <div>
+                    <p id="tipekelas">Regular</p>
+                    <p class="btn2" id="hargakelas">Rp50K</p>
+                  </div>
+                  <div>
+                    <p id="tipekelas">Private</p>
+                    <p class="btn2" id="hargakelas">Rp80K</p>
+                  </div>
+                </div>
+                <div class="icons">
+                  <span class="icon icon1"><a href="./russian.html" target="_blank"><i class="fas fa-info-circle"></i></a></span>
+                  <!-- <span class="icon icon2"><i class="fas fa-cart-plus"></i></span> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- KELAS -->
+
+        <!-- ALASAN -->
+        <div class="judulalasan">
+          <div class="container">
+            <h1>Mengapa NativaTalk?</h1>
+          </div>
+        </div>
+        <div class="alasan" data-aos="fade-up">
+          <div class="container">
+            <div class="box">
+              <div class="icon"><i class="fas fa-user-tie"></i></div>
+              <div class="counter">864</div>
+              <div class="text">Tutor</div>
+            </div>
+            <div class="box">
+              <div class="icon"><i class="fas fa-user-graduate"></i></div>
+              <div class="counter">6478</div>
+              <div class="text">NativaTalker</div>
+            </div>
+            <div class="box">
+              <div class="icon"><i class="fas fa-university"></i></div>
+              <div class="counter">536</div>
+              <div class="text">Kelas</div>
+            </div>
+            <div class="box">
+              <div class="icon"><i class="fas fa-star"></i></div>
+              <div class="counter">1221</div>
+              <div class="text">Ulasan</div>
+            </div>
+          </div>
+        </div>
+        <!-- ALASAN -->
+
+        <!-- HARGA -->
+        <div class="judulharga" id="harga">
+          <div class="container">
+            <h1>Daftar Sekarang</h1>
+          </div>
+        </div>
+        <div class="harga" data-aos="fade-up">
+          <div class="container">
+
+            <div class="single-price" id="reguler">
+              <h2>Kelas Reguler</h2>
+              <div class="prices">
+                <h1>Rp50.000 <span>/ session</span></h1>
+              </div>
+              <div class="deals">
+                <ul>
+                  <li>
+                    <span><i class="fas fa-check-circle"></i></span>
+                    <p>Diajarkan oleh tutor Native yang berpengalaman</p>
+                  </li>
+                  <li>
+                    <span><i class="fas fa-check-circle"></i></span>
+                    <p>Setiap sesi berlangsung 90 menit</p>
+                  </li>
+                  <li>
+                    <span><i class="fas fa-check-circle"></i></span>
+                    <p>Pembelajaran interaktif</p>
+                  </li>
+                  <li>
+                    <span><i class="fas fa-check-circle"></i></span>
+                    <p>Disediakan modul pembelajaran</p>
+                  </li>
+                  <li>
+                    <span><i class="fas fa-check-circle"></i></span>
+                    <p>Maksimal 10 murid per kelas</p>
+                  </li>
+                </ul>
+              </div>
+              <a href="payment.html" target="_blank" class="btn">Mulai Belajar</a>
+            </div>
+
+            <div class=" single-price" id="private">
+              <h2>Kelas Private</h2>
+              <div class="prices">
+                <h1>Rp80.000 <span>/ session</span></h1>
+              </div>
+              <div class="deals">
+                <ul>
+                  <li>
+                    <span><i class="fas fa-check-circle"></i></span>
+                    <p>Diajarkan oleh tutor Native yang berpengalaman</p>
+                  </li>
+                  <li>
+                    <span><i class="fas fa-check-circle"></i></span>
+                    <p>Setiap sesi berlangsung 120 menit</p>
+                  </li>
+                  <li>
+                    <span><i class="fas fa-check-circle"></i></span>
+                    <p>Pembelajaran interaktif</p>
+                  </li>
+                  <li>
+                    <span><i class="fas fa-check-circle"></i></span>
+                    <p>Disediakan modul pembelajaran</p>
+                  </li>
+                  <li>
+                    <span><i class="fas fa-check-circle"></i></span>
+                    <p>Maksimal 4 murid per kelas</p>
+                  </li>
+                </ul>
+              </div>
+              <a href="payment.html" target="_blank" class="btn">Mulai Belajar</a>
+            </div>
+
+          </div>
+        </div>
+        <!-- HARGA -->
+
+        <!-- FAQ -->
+        <div class=" judulfaq" id="faq">
+          <div class="container">
+            <h1>Pertanyaan yang Sering Diajukan</h1>
+          </div>
+        </div>
+        <div class="faq" data-aos="fade-up">
+          <div class="container">
+            <div class="accordian-img">
+              <img src="../IMG/FAQ.png" alt="FAQ">
+            </div>
+
+            <div class="accordian">
+
+              <div class="kartu">
+                <div class="kartu-header">
+                  <h3>Ada kelas bahasa apa saja?</h3>
+                  <span class="fa fa-plus"></span>
+                </div>
+                <div class="kartu-body ">
+                  <p>NativaTalk menawarkan kelas untuk 6 bahasa, yaitu Inggris, Jepang, Jerman, Mandarin, Perancis, dan Rusia. Terdapat 5 level berbeda, yaitu Beginner, Elementary, Intermediate, Upper Intermediate, dan Advanced.</p>
+                </div>
+              </div>
+
+              <div class="kartu">
+                <div class="kartu-header">
+                  <h3>Bagaimana sistem belajarnya?</h3>
+                  <span class="fa fa-plus"></span>
+                </div>
+                <div class="kartu-body ">
+                  <p>Proses pembelajaran dilakukan secara online menggunakan Zoom Meetings sebanyak seminggu 2 kali.</p>
+                </div>
+              </div>
+
+              <div class="kartu">
+                <div class="kartu-header" id="satu">
+                  <h3>Bagaimana jadwal kelasnya?</h3>
+                  <span class="fa fa-plus"></span>
+                </div>
+                <div class="kartu-body ">
+                  <p>Jadwal akan ditentukan pada saat kelas akan dibuka. Selebihnya, jadwal dapat disesuaikan sesuai dengan kesepakatan antara tutor dan NativaTalker.</p>
+                </div>
+              </div>
+
+              <div class="kartu">
+                <div class="kartu-header">
+                  <h3>Apakah dapat bertanya di luar jam kelas?</h3>
+                  <span class="fa fa-plus"></span>
+                </div>
+                <div class="kartu-body ">
+                  <p>Setiap kelas akan disediakan grup WhatsApp. NativaTalker dapat berdiskusi mengenai apa pun di grup tersebut di luar jam kelas.</p>
+                </div>
+              </div>
+
+              <div class="kartu">
+                <div class="kartu-header">
+                  <h3>Apakah terdapat sertifikat setelah lulus?</h3>
+                  <span class="fa fa-plus"></span>
+                </div>
+                <div class="kartu-body ">
+                  <p>Setelah menyelesaikan setiap level, NativaTalker akan mendapatkan sertifikat yang dapat digunakan untuk keperluan sekolah, pekerjaan, dan lain-lain.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- FAQ -->
+
+        <!-- REVIEW -->
+        <div class="judulreview" id="review">
+          <div class="container">
+            <h1>Apa Kata Mereka?</h1>
+          </div>
+        </div>
+        <section data-aos="fade-up">
+          <div class="testimonials-carousel-wrap">
+            <div class="listing-carousel-button listing-carousel-button-next"><i class="fas fa-arrow-circle-right"></i></div>
+            <div class="listing-carousel-button listing-carousel-button-prev"><i class="fas fa-arrow-circle-left"></i></div>
+            <div class="testimonials-carousel">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+
+                  <div class="swiper-slide">
+                    <div class="testi-item">
+                      <div class="testi-avatar"><img src="../IMG/Ifah.jpg"></div>
+                      <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+                      <div class="testimonials-text">
+                        <div class="listing-rating">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <p>Kelasnya asik dan grup diskusinya sangat aktif. Tutornya pun ramah dan selalu menjawab pertanyaan kita dengan jelas.</p>
+                        <!-- <a href="#" class="text-link"></a> -->
+                        <div class="testimonials-avatar">
+                          <h3>'Athifah Radhiyah Habibilah</h3>
+                          <h4>Bekasi, Jawa Barat</h4>
+                        </div>
+                      </div>
+                      <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="testi-item">
+                      <div class="testi-avatar"><img src="../IMG/Darren.jpg"></div>
+                      <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+                      <div class="testimonials-text">
+                        <div class="listing-rating">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <p>Saya sudah mencoba banyak kursus yang lain, tapi dibandingkan dengan yang lain, NativaTalk paling unggul dengan metode pembelajaran yang efektif.</p>
+                        <!-- <a href="#" class="text-link"></a> -->
+                        <div class="testimonials-avatar">
+                          <h3>Matthew Darren</h3>
+                          <h4>Tangerang Selatan, Banten</h4>
+                        </div>
+                      </div>
+                      <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="testi-item">
+                      <div class="testi-avatar"><img src="../IMG/Rafi.jpg"></div>
+                      <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+                      <div class="testimonials-text">
+                        <div class="listing-rating">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <p>NativaTalk sangat cocok untuk semua level, mulai dari pemula hingga profesional. Hanya dalam waktu 6 bulan, saya sudah fasih Bahasa Inggris.</p>
+                        <!-- <a href="#" class="text-link"></a> -->
+                        <div class="testimonials-avatar">
+                          <h3>Mochamad Rafi Athallah</h3>
+                          <h4>Semarang, Jawa Tengah</h4>
+                        </div>
+                      </div>
+                      <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="testi-item">
+                      <div class="testi-avatar"><img src="../IMG/Ocid.jpeg"></div>
+                      <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+                      <div class="testimonials-text">
+                        <div class="listing-rating">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <p>Di sini, tersedia banyak banget pilihan bahasanya. Jadwalnya juga sangat fleksibel. Sangat cocok bagi saya yang mempunyai kesibukan sebagai mahasiswa.</p>
+                        <!-- <a href="#" class="text-link"></a> -->
+                        <div class="testimonials-avatar">
+                          <h3>Farhan Imam Naufal</h3>
+                          <h4>Cirebon, Jawa Barat</h4>
+                        </div>
+                      </div>
+                      <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="titik">
+          <div class="container">
+            <center>
+              <div class="tc-pagination"></div>
+            </center>
+          </div>
+        </div>
+        <!-- REVIEW -->
+
+        <!-- FOOTER -->
+        <footer>
+          <div class="footer-wrapper" id="footer">
+            <div class="container">
+
+              <div class="sec aboutus">
+                <img src="../IMG/Logo 3.png" alt="Logo" class="footer-logo">
+                <p>NativaTalk adalah sebuah lembaga penyedia layanan belajar bahasa asing secara daring. Kami hadir bersama para tutor yang inspiratif untuk membagikan pengetahuan dan pengalaman langsung dalam mempelajari bahasa asing. Aktif memberikan ilmu mengenai bahasa asing sejak tahun 2020. </p>
+                <div class="sci">
+                  <li><a href="https://www.instagram.com/darren_matthew_/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="https://www.facebook.com/darren.matthew.315" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="https://twitter.com/athifahrh" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="https://www.youtube.com/channel/UCVIfSmX11dBUulJnzmL5u0w" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                </div>
+              </div>
+
+              <div class="sec quickLinks">
+                <h2>Mulai Belajar</h2>
+                <ul>
+                  <li><a href="./english.html" target="_blank">Bahasa Inggris</a></li>
+                  <li><a href="./japanese.html" target="=_blank">Bahasa Jepang</a></li>
+                  <li><a href="./german.html" target="_blank">Bahasa Jerman</a></li>
+                  <li><a href="./mandarin.html" target="_blank">Bahasa Mandarin</a></li>
+                  <li><a href="./french.html" target="_blank">Bahasa Perancis</a></li>
+                  <li><a href="./russian.html" target="_blank" id="quickLinksterakhir">Bahasa Rusia</a></li>
+                </ul>
+              </div>
+
+              <div class="sec medpar">
+                <h2>Mitra Kami</h2>
+                <div class="medpar-content">
+                  <img src="../IMG/Kemendikbud.png" alt="Kemendikbud" id="Kemendikbud">
+                  <img src="../IMG/Gojek.png" alt="Gojek" id="Gojek">
+                  <img src="../IMG/Undip.png" alt="Undip" id="Undip">
+                  <img src="../IMG/Zenius.png" alt="Zenius" id="Zenius">
+                  <img src="../IMG/Binus.png" alt="Binus" id="Binus">
+                  <img src="../IMG/Shopee.png" alt="Shopee" id="Shopee">
+                </div>
+              </div>
+
+              <div class="sec contact">
+                <h2>Hubungi Kami</h2>
+                <ul class="info">
+                  <li>
+                    <span><i class="fas fa-map-marker-alt"></i></span>
+                    <p>Anggrek Loka, Jl. Anggrek Lili Blok AF No. 25, RT 01 RW 12, Kelurahan Rawa Buntu, Kecamatan Serpong, Kota Tangerang Selatan, Banten, 15318, Indonesia</p>
+                  </li>
+                  <li>
+                    <span><i class="fab fa-whatsapp"></i></span>
+                    <p>+62 859-2120-2350</p>
+                  </li>
+                  <li id="contactterakhir">
+                    <span><i class="fas fa-envelope"></i></span>
+                    <p>support@nativatalk.com</p>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </footer>
+        <!-- FOOTER -->
+
+        <!-- COPYRIGHT -->
+        <div class="copyright-wrapper">
+          <div class="container">
+            <p>Copyright © 2021 NativaTalk. All Rights Reserved.</p>
+          </div>
+        </div>
+        <!-- COPYRIGHT -->
+
+      </div>
+  </main>
+
+  <!-- JAVASCRIPT -->
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+
+  <!-- CDNJS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.8/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+  <!-- Aos -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- IonIcons -->
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+  <!-- OwlCarousel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <!-- Lordicon -->
+  <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+
+  <!-- My JS -->
+  <script src="../JS/script.js"></script>
+  <!-- JAVASCRIPT -->
+
+</body>
+
+</html>

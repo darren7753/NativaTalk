@@ -1,0 +1,8 @@
+{"editor.fontSize": 20,
+    "window.zoomLevel": 0,
+    "terminal.integrated.fontSize": 16,
+    "workbench.colorTheme": "Noctis Azureus",
+    "workbench.iconTheme": "vscode-icons",
+    "liveServer.settings.port": 5504,
+    "php.validate.executablePath": "D:/xampp/php/php.exe"
+}

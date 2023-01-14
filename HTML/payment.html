@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>NativaTalk | Payment</title>
+  <link rel="shortcut icon" href="../IMG/Logo Kotak.png">
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- FONT -->
+
+  <!-- CSS -->
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+  <!-- CDNJS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.8/swiper-bundle.min.css">
+
+  <!-- Aos -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- My CSS -->
+  <link rel="stylesheet" href="../CSS/style.css">
+  <!-- CSS -->
+</head>
+
+<body>
+  <main>
+
+    <!-- LOG IN -->
+    <div class="content">
+      <div class="login">
+        <div class="login-container" id="popup">
+          <div class="wrapper">
+            <div class="close">
+              <i class="fas fa-times" onclick="toggle()"></i>
+            </div>
+            <div class="title-text">
+              <div class="title login">
+                Welcome Back!
+              </div>
+              <div class="title signup">
+                Create Account
+              </div>
+            </div>
+            <div class="form-container">
+              <div class="slide-controls">
+                <input type="radio" name="slide" id="login" checked>
+                <input type="radio" name="slide" id="signup">
+                <label for="login" class="slide login">Log in</label>
+                <label for="signup" class="slide signup">Sign up</label>
+                <div class="slider-tab"></div>
+              </div>
+              <div class="form-inner">
+                <form action="#" class="login">
+                  <div class="field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="Email Address" required>
+                  </div>
+                  <div class="field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" required>
+                  </div>
+                  <!-- <div class="pass-link">
+                    <a href="#">Forgot password?</a>
+                    </div> -->
+                  <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <input type="submit" value="Log in">
+                  </div>
+                  <div class="with-socmed">
+                    <a href="#"><i class="fab fa-google"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </div>
+                  <div class="signup-link">
+                    Don't have an account? <a href="">Sign up</a>
+                  </div>
+                </form>
+                <form action="#" class="signup">
+                  <div class="field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Full Name" required>
+                  </div>
+                  <div class="field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="Email Address" required>
+                  </div>
+                  <div class="field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" required>
+                  </div>
+                  <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <input type="submit" value="Sign up">
+                  </div>
+                  <div class="with-socmed" id="with-socmed-signup">
+                    <a href="#"><i class="fab fa-google"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </div>
+                  <!-- <div class="login-link">
+                      Already have an account? <a href="">Log in</a>
+                    </div> -->
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- LOG IN -->
+
+    <!-- CONTACT US -->
+    <div class="contact-us">
+      <div class="container" id="popup-contact-us">
+        <div class="cu-wrapper">
+          <div class="cu-content">
+            <div class="close">
+              <i class="fas fa-times" onclick="toggle2()"></i>
+            </div>
+            <div class="left-side">
+              <div class="address details" id="alamat">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="topic">Alamat</div>
+                <div class="text-one">Anggrek Loka, Jl. Anggrek Lili Blok AF No. 25, RT 01 RW 12, Kelurahan Rawa Buntu, Kecamatan Serpong, Kota Tangerang Selatan, Banten, 15318, Indonesia</div>
+              </div>
+              <div class="phone details">
+                <i class="fab fa-whatsapp"></i>
+                <div class="topic">WhatsApp</div>
+                <div class="text-one">+62 859-2120-2350</div>
+              </div>
+              <div class="email details">
+                <i class="fas fa-envelope"></i>
+                <div class="topic">Email</div>
+                <div class="text-one">support@nativatalk.com</div>
+              </div>
+            </div>
+            <div class="right-side">
+              <div class="topic-text">Hubungi Kami</div>
+              <p>Jika NativaTalker memiliki pertanyaan atau masukan, silakan mengirimkan pesan kepada kami.</p>
+              <form action="#">
+                <div class="form-row">
+                  <div class="input-data">
+                    <input type="text" required>
+                    <div class="underline"></div>
+                    <label>First Name</label>
+                  </div>
+                  <div class="input-data">
+                    <input type="text" required>
+                    <div class="underline"></div>
+                    <label>Last Name</label>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="input-data">
+                    <input type="email" required>
+                    <div class="underline"></div>
+                    <label>Email Address</label>
+                  </div>
+                  <div class="input-data">
+                    <input type="number" required>
+                    <div class="underline"></div>
+                    <label>Phone Number</label>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="input-data textarea">
+                    <textarea cols="30" rows="10" required></textarea>
+                    <div class="underline"></div>
+                    <label>Write your message</label>
+                  </div>
+                </div>
+                <div class="form-row submit-btn">
+                  <div class="input-data">
+                    <div class="inner"></div>
+                    <input type="submit" value="Kirim">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CONTACT US -->
+
+    <div class="big-wrapper light" id="blur">
+      <!-- EMAIL ICON -->
+      <div class="email_icon" onclick="toggle2()">
+        <!-- <div class="email_img" onclick="toggle()"><ion-icon name="chatboxes"></ion-icon></div> -->
+        <div class="email_img">
+          <ion-icon name="chatboxes"></ion-icon>
+        </div>
+      </div>
+      <!-- EMAIL ICON -->
+
+      <!-- NAVBAR -->
+      <header>
+        <div class="container">
+          <div class="logo">
+            <a href="./index.html"><img src="../IMG/Logo 3.png" alt="Logo"></a>
+          </div>
+          <div class="links">
+            <ul>
+              <li><a href="#level" class="link">Level</a></li>
+              <li><a href="#harga" class="link">Daftar Sekarang</a></li>
+              <li><a href="#lainnya" class="link">Bahasa Lainnya</a></li>
+              <li><a href="#" class="btn" onclick="toggle()">Log in</a></li>
+            </ul>
+          </div>
+          <div class="overlay"></div>
+          <div class="hamburger-menu">
+            <div class="bar"></div>
+          </div>
+        </div>
+      </header>
+      <!-- NAVBAR -->
+
+      <!-- PAYMENT -->
+      <div class="payment">
+        <div class="container">
+          <div class="title">Payment</div>
+          <div class="content">
+            <form action="payment.php" method="post">
+              <div class="user-details">
+                <div class="input-box">
+                  <span class="details">Full Name</span>
+                  <input type="text" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="input-box">
+                  <span class="details">Email</span>
+                  <input type="text" name="email" placeholder="Enter your email address" required>
+                </div>
+                <div class="input-box">
+                  <span class="details">Phone Number</span>
+                  <input type="text" name="phone" placeholder="Enter your phone number" required>
+                </div>
+              </div>
+              <div class="class-details">
+                <input type="radio" name="class" value="1" id="dot-1">
+                <input type="radio" name="class" value="2" id="dot-2">
+                <input type="radio" name="class" value="3" id="dot-3">
+                <input type="radio" name="class" value="4" id="dot-4">
+                <input type="radio" name="class" value="5" id="dot-5">
+                <input type="radio" name="class" value="6" id="dot-6">
+                <span class="class-title">Class</span>
+                <div class="category">
+                  <label for="dot-1">
+                    <span class="dot one"></span>
+                    <span class="class">English</span>
+                  </label>
+                  <label for="dot-2">
+                    <span class="dot two"></span>
+                    <span class="class">Japanese</span>
+                  </label>
+                  <label for="dot-3">
+                    <span class="dot three"></span>
+                    <span class="class">German</span>
+                  </label>
+                  <label for="dot-4">
+                    <span class="dot four"></span>
+                    <span class="class">Mandarin</span>
+                  </label>
+                  <label for="dot-5">
+                    <span class="dot five"></span>
+                    <span class="class">French</span>
+                  </label>
+                  <label for="dot-6">
+                    <span class="dot six"></span>
+                    <span class="class">Russian</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="level-details">
+                <input type="radio" name="level" value="1" id="dot-7">
+                <input type="radio" name="level" value="2" id="dot-8">
+                <input type="radio" name="level" value="3" id="dot-9">
+                <input type="radio" name="level" value="4" id="dot-10">
+                <input type="radio" name="level" value="5" id="dot-11">
+                <span class="level-title">Level</span>
+                <div class="category">
+                  <label for="dot-7">
+                    <span class="dot seven"></span>
+                    <span class="level">1</span>
+                  </label>
+                  <label for="dot-8">
+                    <span class="dot eight"></span>
+                    <span class="level">2</span>
+                  </label>
+                  <label for="dot-9">
+                    <span class="dot nine"></span>
+                    <span class="level">3</span>
+                  </label>
+                  <label for="dot-10">
+                    <span class="dot ten"></span>
+                    <span class="level">4</span>
+                  </label>
+                  <label for="dot-11">
+                    <span class="dot eleven"></span>
+                    <span class="level">5</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="payment-details">
+                <input type="radio" name="payment_method" value="1" id="dot-12">
+                <input type="radio" name="payment_method" value="2" id="dot-13">
+                <input type="radio" name="payment_method" value="3" id="dot-14">
+                <span class="payment-title">Payment</span>
+                <div class="category">
+                  <label for="dot-12">
+                    <span class="dot twelve"></span>
+                    <span class="payment">BCA</span>
+                  </label>
+                  <label for="dot-13">
+                    <span class="dot thirteen"></span>
+                    <span class="payment">BNI</span>
+                  </label>
+                  <label for="dot-14">
+                    <span class="dot fourteen"></span>
+                    <span class="payment">BRI</span>
+                  </label>
+                </div>
+              </div>
+              <div class="button">
+                <input type="submit" name="submit" value="Checkout">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- PAYMENT -->
+
+      <!-- FOOTER -->
+      <footer>
+        <div class="footer-wrapper" id="footer">
+          <div class="container">
+
+            <div class="sec aboutus">
+              <img src="../IMG/Logo 3.png" alt="Logo" class="footer-logo">
+              <p>NativaTalk adalah sebuah lembaga penyedia layanan belajar bahasa asing secara daring. Kami hadir bersama para tutor yang inspiratif untuk membagikan pengetahuan dan pengalaman langsung dalam mempelajari bahasa asing. Aktif memberikan ilmu mengenai bahasa asing sejak tahun 2020. </p>
+              <div class="sci">
+                <li><a href="https://www.instagram.com/darren_matthew_/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/darren.matthew.315" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://twitter.com/athifahrh" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCVIfSmX11dBUulJnzmL5u0w" target="_blank"><i class="fab fa-youtube"></i></a></li>
+              </div>
+            </div>
+
+            <div class="sec quickLinks">
+              <h2>Mulai Belajar</h2>
+              <ul>
+                <li><a href="./english.html" target="_blank">Bahasa Inggris</a></li>
+                <li><a href="./japanese.html" target="=_blank">Bahasa Jepang</a></li>
+                <li><a href="./german.html">Bahasa Jerman</a></li>
+                <li><a href="./mandarin.html" target="_blank">Bahasa Mandarin</a></li>
+                <li><a href="./french.html" target="_blank">Bahasa Perancis</a></li>
+                <li><a href="./russian.html" target="_blank" id="quickLinksterakhir">Bahasa Rusia</a></li>
+              </ul>
+            </div>
+
+            <div class="sec medpar">
+              <h2>Mitra Kami</h2>
+              <div class="medpar-content">
+                <img src="../IMG/Kemendikbud.png" alt="Kemendikbud" id="Kemendikbud">
+                <img src="../IMG/Gojek.png" alt="Gojek" id="Gojek">
+                <img src="../IMG/Undip.png" alt="Undip" id="Undip">
+                <img src="../IMG/Zenius.png" alt="Zenius" id="Zenius">
+                <img src="../IMG/Binus.png" alt="Binus" id="Binus">
+                <img src="../IMG/Shopee.png" alt="Shopee" id="Shopee">
+              </div>
+            </div>
+
+            <div class="sec contact">
+              <h2>Hubungi Kami</h2>
+              <ul class="info">
+                <li>
+                  <span><i class="fas fa-map-marker-alt"></i></span>
+                  <p>Anggrek Loka, Jl. Anggrek Lili Blok AF No. 25, RT 01 RW 12, Kelurahan Rawa Buntu, Kecamatan Serpong, Kota Tangerang Selatan, Banten, 15318, Indonesia</p>
+                </li>
+                <li>
+                  <span><i class="fab fa-whatsapp"></i></span>
+                  <p>+62 859-2120-2350</p>
+                </li>
+                <li id="contactterakhir">
+                  <span><i class="fas fa-envelope"></i></span>
+                  <p>support@nativatalk.com</p>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </footer>
+      <!-- FOOTER -->
+
+      <!-- COPYRIGHT -->
+      <div class="copyright-wrapper">
+        <div class="container">
+          <p>Copyright © 2021 NativaTalk. All Rights Reserved.</p>
+        </div>
+      </div>
+      <!-- COPYRIGHT -->
+
+    </div>
+  </main>
+
+  <!-- JAVASCRIPT -->
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+
+  <!-- CDNJS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.8/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+  <!-- Aos -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- IonIcons -->
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+  <!-- Lordicon -->
+  <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+
+  <!-- My JS -->
+  <script src="../JS/script.js"></script>
+  <!-- JAVASCRIPT -->
+
+</body>
+
+</html>

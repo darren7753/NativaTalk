@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>NativaTalk | French Course</title>
+    <link rel="shortcut icon" href="../IMG/Logo Kotak.png">
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- FONT -->
+
+    <!-- CSS -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <!-- CDNJS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.8/swiper-bundle.min.css">
+
+    <!-- Aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="../CSS/style.css">
+    <!-- CSS -->
+  </head>
+
+  <body>
+    <main>
+
+      <!-- LOG IN -->
+      <div class="content">
+        <div class="login">
+          <div class="login-container" id="popup">
+            <div class="wrapper">
+              <div class="close">
+                <i class="fas fa-times" onclick="toggle()"></i>
+              </div>
+              <div class="title-text">
+                <div class="title login">
+                  Welcome Back!
+                </div>
+                <div class="title signup">
+                  Create Account
+                </div>
+              </div>
+              <div class="form-container">
+                <div class="slide-controls">
+                  <input type="radio" name="slide" id="login" checked>
+                  <input type="radio" name="slide" id="signup">
+                  <label for="login" class="slide login">Log in</label>
+                  <label for="signup" class="slide signup">Sign up</label>
+                  <div class="slider-tab"></div>
+                </div>
+                <div class="form-inner">
+                  <form action="#" class="login">
+                    <div class="field">
+                      <i class="fas fa-envelope"></i>
+                      <input type="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="field">
+                      <i class="fas fa-lock"></i>
+                      <input type="password" placeholder="Password" required>
+                    </div>
+                    <!-- <div class="pass-link">
+                    <a href="#">Forgot password?</a>
+                    </div> -->
+                    <div class="field btn">
+                    <div class="btn-layer"></div>
+                      <input type="submit" value="Log in">
+                    </div>
+                    <div class="with-socmed">
+                      <a href="#"><i class="fab fa-google"></i></a>
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <div class="signup-link">
+                      Don't have an account? <a href="">Sign up</a>
+                    </div>
+                  </form>
+                  <form action="#" class="signup">
+                    <div class="field">
+                      <i class="fas fa-user"></i>
+                      <input type="text" placeholder="Full Name" required> 
+                    </div>
+                    <div class="field">
+                      <i class="fas fa-envelope"></i>
+                      <input type="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="field">
+                      <i class="fas fa-lock"></i>
+                      <input type="password" placeholder="Password" required>
+                    </div>
+                    <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <input type="submit" value="Sign up">
+                    </div>
+                    <div class="with-socmed" id="with-socmed-signup">
+                      <a href="#"><i class="fab fa-google"></i></a>
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <!-- <div class="login-link">
+                      Already have an account? <a href="">Log in</a>
+                    </div> -->
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- LOG IN -->
+
+      <!-- CONTACT US -->
+      <div class="contact-us">
+        <div class="container" id="popup-contact-us">
+          <div class="cu-wrapper">
+            <div class="cu-content">
+              <div class="close">
+                <i class="fas fa-times" onclick="toggle2()"></i>
+              </div>
+              <div class="left-side">
+                <div class="address details" id="alamat">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div class="topic">Alamat</div>
+                  <div class="text-one">Anggrek Loka, Jl. Anggrek Lili Blok AF No. 25, RT 01 RW 12, Kelurahan Rawa Buntu, Kecamatan Serpong, Kota Tangerang Selatan, Banten, 15318, Indonesia</div>
+                </div>
+                <div class="phone details">
+                  <i class="fab fa-whatsapp"></i>
+                  <div class="topic">WhatsApp</div>
+                  <div class="text-one">+62 859-2120-2350</div>
+                </div>
+                <div class="email details">
+                  <i class="fas fa-envelope"></i>
+                  <div class="topic">Email</div>
+                  <div class="text-one">support@nativatalk.com</div>
+                </div>
+              </div>
+              <div class="right-side">
+                <div class="topic-text">Hubungi Kami</div>
+                <p>Jika NativaTalker memiliki pertanyaan atau masukan, silakan mengirimkan pesan kepada kami.</p>
+                <form action="#">
+                  <div class="form-row">
+                    <div class="input-data">
+                      <input type="text" required>
+                      <div class="underline"></div>
+                      <label>First Name</label>
+                    </div>
+                    <div class="input-data">
+                      <input type="text" required>
+                      <div class="underline"></div>
+                      <label>Last Name</label>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="input-data">
+                      <input type="email" required>
+                      <div class="underline"></div>
+                      <label>Email Address</label>
+                    </div>
+                    <div class="input-data">
+                      <input type="number" required>
+                      <div class="underline"></div>
+                      <label>Phone Number</label>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="input-data textarea">
+                      <textarea cols="30" rows="10" required></textarea>
+                      <div class="underline"></div>
+                      <label>Write your message</label>
+                    </div>
+                  </div>
+                  <div class="form-row submit-btn">
+                    <div class="input-data">
+                      <div class="inner"></div>
+                      <input type="submit" value="Kirim">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- CONTACT US -->
+
+      <div class="big-wrapper light" id="blur">
+        <!-- EMAIL ICON -->
+        <div class="email_icon" onclick="toggle2()">
+          <!-- <div class="email_img" onclick="toggle()"><ion-icon name="chatboxes"></ion-icon></div> -->
+          <div class="email_img"><ion-icon name="chatboxes"></ion-icon></div>
+        </div>
+        <!-- EMAIL ICON -->
+
+        <!-- NAVBAR -->
+        <header>
+          <div class="container">
+            <div class="logo">
+              <a href="./index.html"><img src="../IMG/Logo 3.png" alt="Logo"></a>
+            </div>
+            <div class="links">
+              <ul>
+                <li><a href="#level" class="link">Level</a></li>
+                <li><a href="#harga" class="link">Daftar Sekarang</a></li>
+                <li><a href="#lainnya" class="link">Bahasa Lainnya</a></li>
+                <li><a href="#" class="btn" onclick="toggle()">Log in</a></li>
+              </ul>
+            </div>
+            <div class="overlay"></div>
+            <div class="hamburger-menu">
+              <div class="bar"></div>
+            </div>
+          </div>
+        </header>
+        <!-- NAVBAR -->
+
+        <!-- SHOWCASE AREA -->
+        <div class="showcase-area" id="showcase-areaFrance">
+          <div class="container">
+            <div class="left">
+              <div class="big-title">
+                <h1>Belajar <span>Bahasa Perancis</span><br> dari Dasar di NativaTalk</h1>
+                <h4>Bersama ribuan NativaTalker lainnya</h4>
+              </div>
+              <div class="cta">
+                <a href="#harga" class="btn">Join Now</a>
+              </div>
+            </div>
+            <div class="right">
+              <img src="../IMG/France Showcase.png" alt="France" class="person" />
+            </div>
+          </div>
+        </div>
+        <div class="bottom-area">
+          <div class="container">
+            <button class="toggle-btn">
+            </button>
+          </div>
+        </div>
+        <!-- SHOWCASE AREA -->
+
+        <!-- INFO -->
+        <div class="judulinfo" id="info">
+          <div class="container">
+            <h1>Tentang Bahasa Perancis</h1>
+          </div>
+        </div>
+        <div class="info" data-aos="fade-up">
+          <div class="container">
+
+            <div class="serviceBox">
+              <div class="icon" id="speaker">
+                <lord-icon
+                  src="https://cdn.lordicon.com/uukerzzv.json"
+                  trigger="loop"
+                  colors="primary:#3e949c,secondary:#3e949c"
+                  style="width:140px;height:140px">
+                </lord-icon>
+              </div>
+              <div class="content">
+                <h2>Native Speakers</h2>
+                <p>Terdapat sekitar 280 juta orang yang berbicara menggunakan Bahasa Perancis.</p>
+              </div>
+            </div>
+
+            <div class="serviceBox">
+              <div class="icon" id="country">
+                <lord-icon
+                  src="https://cdn.lordicon.com/gqzfzudq.json"
+                  trigger="loop"
+                  colors="primary:#3e949c,secondary:#3e949c"
+                  style="width:150px;height:150px">
+                </lord-icon>
+              </div>
+              <div class="content">
+                <h2>Countries</h2>
+                <p>Bahasa Perancis merupakan bahasa resmi di 29 negara dan wilayah, termasuk Haiti dan Rwanda.</p>
+              </div>
+            </div>
+
+            <div class="serviceBox">
+              <div class="icon" id="fun-fact">
+                <lord-icon
+                  src="https://cdn.lordicon.com/msoeawqm.json"
+                  trigger="loop"
+                  colors="primary:#3e949c,secondary:#3e949c"
+                  style="width:125px;height:125px">
+                </lord-icon>
+              </div>
+              <div class="content">
+                <h2>Fun Fact</h2>
+                <p>Sekitar 45% kata dalam Bahasa Inggris modern berasal dari Bahasa Perancis.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- INFO -->
+
+        <!-- LEVEL -->
+        <div class="judullevel" id="level">
+          <div class="container">
+            <h1>Pilihlah Levelmu</h1>
+          </div>
+        </div>
+        <div class="level" data-aos="fade-up">
+          <div class="container">
+            <div class="process-wrapper">
+              <div id="progress-bar-container">
+                <ul>
+                  <li class="step step01 active"><div class="step-inner">Beginner</div></li>
+                  <li class="step step02"><div class="step-inner">Elementary</div></li>
+                  <li class="step step03"><div class="step-inner">Intermediate</div></li>
+                  <li class="step step04"><div class="step-inner">Upper Intermediate</div></li>
+                  <li class="step step05"><div class="step-inner">Advanced</div></li>
+                </ul>
+                
+                <div id="line">
+                  <div id="line-progress"></div>
+                </div>
+              </div>
+              
+              <div id="progress-content-section">
+                <div class="section-content discovery active">
+                  <i class="fas fa-battery-empty"></i>
+                  <h2>Beginner</h2>
+                  <p>Dapat memahami dan menggunakan ungkapan sehari-hari yang akrab dan frasa mendasar yang ditujukan untuk kepuasan kebutuhan tipe konkret. Dapat memperkenalkan dirinya dan orang lain serta dapat bertanya dan menjawab pertanyaan tentang detail pribadi seperti di mana dia tinggal, orang yang dia kenal, dan hal-hal yang dia miliki. Dapat berinteraksi dengan cara yang sederhana asalkan lawan bicara berbicara perlahan, jelas, dan siap membantu.</p>
+                </div>
+                
+                <div class="section-content strategy">
+                  <i class="fas fa-battery-quarter"></i>
+                  <h2>Elementary</h2>
+                  <p>Dapat memahami kalimat dan ekspresi yang sering digunakan terkait dengan bidang yang paling relevan, seperti informasi pribadi dan keluarga yang sangat mendasar, belanja, geografi lokal, dan pekerjaan. Dapat berkomunikasi dalam tugas-tugas sederhana dan rutin yang membutuhkan pertukaran informasi yang sederhana dan langsung tentang hal-hal yang biasa dan rutin. Dapat menjelaskan secara sederhana aspek-aspek latar belakangnya, lingkungan terdekatnya, dan hal-hal di bidang yang sangat membutuhkan.</p>
+                </div>
+                
+                <div class="section-content creative">
+                  <i class="fas fa-battery-half"></i>
+                  <h2>Intermediate</h2>
+                  <p>Dapat memahami poin-poin utama dari masukan standar yang jelas tentang hal-hal yang biasa ditemui di tempat kerja, sekolah, waktu luang, dan sebagainya. Dapat menangani sebagian besar situasi yang mungkin muncul saat bepergian ke daerah yang menggunakan bahasa tersebut. Dapat membuat teks sederhana tentang topik yang akrab atau minat pribadi. Dapat menggambarkan pengalaman, peristiwa, mimpi, harapan, dan ambisi.</p>
+                </div>
+                
+                <div class="section-content production">
+                  <i class="fas fa-battery-three-quarters"></i>
+                  <h2>Upper Intermediate</h2>
+                  <p>Dapat memahami gagasan utama teks kompleks pada topik konkret dan abstrak, termasuk diskusi teknis di bidang spesialisasinya. Dapat berinteraksi dengan tingkat kefasihan dan spontanitas yang memungkinkan interaksi reguler dengan penutur asli tanpa ketegangan bagi salah satu pihak. Dapat membuat teks yang jelas dan rinci tentang berbagai mata pelajaran dan menjelaskan sudut pandang tentang masalah topikal serta memberikan keuntungan dan kerugian dari berbagai pilihan.</p>
+                </div>
+                
+                <div class="section-content analysis">
+                  <i class="fas fa-battery-full"></i>
+                  <h2>Advanced</h2>
+                  <p>Dapat memahami berbagai tuntutan, teks yang lebih panjang, dan mengenali makna tersirat. Dapat mengekspresikan dirinya dengan lancar dan spontan tanpa banyak mencari ekspresi yang jelas. Dapat menggunakan bahasa secara fleksibel dan efektif untuk tujuan sosial, akademik, dan profesional. Dapat menghasilkan teks yang jelas, terstruktur dengan baik, dan terperinci tentang subjek yang kompleks serta menunjukkan penggunaan pola organisasi, konektor, dan perangkat kohesif yang terkontrol.</p>
+                </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <!-- LEVEL -->
+
+        <!-- TUTOR -->
+        <div class="judultutor">
+          <div class="container">
+            <h1>Tutor Kami</h1>
+          </div>
+        </div>
+        <div class="tutor" data-aos="fade-up">
+          <div class="container">
+            <div class="row">
+              <div class="column">
+                <div class="imgBox">
+                  <img src="../IMG/Nativa Tutor/FRENCH 1.jpg">
+                </div>
+                <div class="details">
+                  <h3>Louie Beaufort<br><span>French Tutor</span></h3>
+                  <ul>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="column">
+                <div class="imgBox">
+                  <img src="../IMG/Nativa Tutor/FRENCH 2.jpg">
+                </div>
+                <div class="details">
+                  <h3>Valérie Olivier<br><span>French Tutor</span></h3>
+                  <ul>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="column">
+                <div class="imgBox">
+                  <img src="../IMG/Nativa Tutor/FRENCH 3.jpg">
+                </div>
+                <div class="details">
+                  <h3>Bénédict Dubois<br><span>French Tutor</span></h3>
+                  <ul>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div style="clear: both;"></div>
+            </div>
+          </div>
+        </div>
+        <!-- TUTOR -->
+
+        <!-- HARGA -->
+        <div class="judulharga" id="harga">
+          <div class="container">
+            <h1>Daftar Sekarang</h1>
+          </div>
+        </div>
+        <div class="harga" data-aos="fade-up">
+          <div class="container">
+
+            <div class="single-price" id="reguler">
+              <h2>Kelas Reguler</h2>
+              <div class="prices">
+                <h1>Rp50.000 <span>/ session</span></h1>
+              </div>
+              <div class="deals">
+                <ul>
+                  <li>
+                    <span><i class="fas fa-check-circle"></i></span>
+                    <p>Diajarkan oleh tutor Native yang berpengalaman</p>
+                  </li>
+                  <li>
+                    <span><i class="fas fa-check-circle"></i></span>
+                    <p>Setiap sesi berlangsung 90 menit</p>
+                  </li>
+                  <li>
+                    <span><i class="fas fa-check-circle"></i></span>
+                    <p>Pembelajaran interaktif</p>
+                  </li>
+                  <li>
+                    <span><i class="fas fa-check-circle"></i></span>
+                    <p>Disediakan modul pembelajaran</p>
+                  </li>
+                  <li>
+                    <span><i class="fas fa-check-circle"></i></span>
+                    <p>Maksimal 10 murid per kelas</p>
+                  </li>
+                </ul>
+              </div>
+              <a href="payment.html" target="_blank" class="btn">Mulai Belajar</a>
+            </div>
+
+            <div class="single-price" id="private">
+              <h2>Kelas Private</h2>
+              <div class="prices">
+                <h1>Rp80.000 <span>/ session</span></h1>
+              </div>
+              <div class="deals">
+                <ul>
+                  <li>
+                    <span><i class="fas fa-check-circle"></i></span>
+                    <p>Diajarkan oleh tutor Native yang berpengalaman</p>
+                  </li>
+                  <li>
+                    <span><i class="fas fa-check-circle"></i></span>
+                    <p>Setiap sesi berlangsung 120 menit</p>
+                  </li>
+                  <li>
+                    <span><i class="fas fa-check-circle"></i></span>
+                    <p>Pembelajaran interaktif</p>
+                  </li>
+                  <li>
+                    <span><i class="fas fa-check-circle"></i></span>
+                    <p>Disediakan modul pembelajaran</p>
+                  </li>
+                  <li>
+                    <span><i class="fas fa-check-circle"></i></span>
+                    <p>Maksimal 4 murid per kelas</p>
+                  </li>
+                </ul>
+              </div>
+              <a href="payment.html" target="_blank" class="btn">Mulai Belajar</a>
+            </div>
+
+          </div>
+        </div>
+        <!-- HARGA -->
+
+        <!-- LAINNYA -->
+        <div class="judullainnya" id="lainnya">
+          <div class="container">
+            <h1>Bahasa Lainnya</h1>
+          </div>
+        </div>
+        <div class="lainnya" data-aos="fade-up">
+          <div class="container">
+            <a href="./english.html" target="_blank"><img src="../IMG/Bendera UK.png" alt="English"></a>
+            <a href="../HTML/japanese.html" target="_blank"><img src="../IMG/Bendera Jepang.png" alt="Japanese"></a>
+            <a href="../HTML/german.html" target="_blank"><img src="../IMG/Bendera Jerman.png" alt="German"></a>
+            <a href="../HTML/mandarin.html" target="_blank"><img src="../IMG/Bendera Cina.png" alt="Mandarin"></a>
+            <a href="../HTML/french.html"><img src="../IMG/Bendera Perancis.png" alt="French"></a>
+            <a href="../HTML/russian.html" target="_blank"><img src="../IMG/Bendera Rusia.png" alt="Russian"></a> 
+          </div>
+        </div>
+        <!-- LAINNYA -->
+
+        <!-- FOOTER -->
+        <footer>
+          <div class="footer-wrapper" id="footer">
+            <div class="container">
+
+              <div class="sec aboutus">
+                <img src="../IMG/Logo 3.png" alt="Logo" class="footer-logo">
+                <p>NativaTalk adalah sebuah lembaga penyedia layanan belajar bahasa asing secara daring. Kami hadir bersama para tutor yang inspiratif untuk membagikan pengetahuan dan pengalaman langsung dalam mempelajari bahasa asing. Aktif memberikan ilmu mengenai bahasa asing sejak tahun 2020. </p>
+                <div class="sci">
+                  <li><a href="https://www.instagram.com/darren_matthew_/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="https://www.facebook.com/darren.matthew.315" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="https://twitter.com/athifahrh" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="https://www.youtube.com/channel/UCVIfSmX11dBUulJnzmL5u0w" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                </div>
+              </div>
+
+              <div class="sec quickLinks">
+                <h2>Mulai Belajar</h2>
+                <ul>
+                  <li><a href="./english.html" target="_blank">Bahasa Inggris</a></li>
+                  <li><a href="./japanese.html" target="=_blank">Bahasa Jepang</a></li>
+                  <li><a href="./german.html" target="_blank">Bahasa Jerman</a></li>
+                  <li><a href="./mandarin.html" target="_blank">Bahasa Mandarin</a></li>
+                  <li><a href="./french.html">Bahasa Perancis</a></li>
+                  <li><a href="./russian.html" target="_blank" id="quickLinksterakhir">Bahasa Rusia</a></li>
+                </ul>
+              </div>
+
+              <div class="sec medpar">
+                <h2>Mitra Kami</h2>
+                <div class="medpar-content">
+                  <img src="../IMG/Kemendikbud.png" alt="Kemendikbud" id="Kemendikbud">
+                  <img src="../IMG/Gojek.png" alt="Gojek" id="Gojek">
+                  <img src="../IMG/Undip.png" alt="Undip" id="Undip">
+                  <img src="../IMG/Zenius.png" alt="Zenius" id="Zenius">
+                  <img src="../IMG/Binus.png" alt="Binus" id="Binus">
+                  <img src="../IMG/Shopee.png" alt="Shopee" id="Shopee">
+                </div>
+              </div>
+
+              <div class="sec contact">
+                <h2>Hubungi Kami</h2>
+                <ul class="info">
+                  <li>
+                    <span><i class="fas fa-map-marker-alt"></i></span>
+                      <p>Anggrek Loka, Jl. Anggrek Lili Blok AF No. 25, RT 01 RW 12, Kelurahan Rawa Buntu, Kecamatan Serpong, Kota Tangerang Selatan, Banten, 15318, Indonesia</p>
+                  </li>
+                  <li>
+                    <span><i class="fab fa-whatsapp"></i></span>
+                      <p>+62 859-2120-2350</p>
+                  </li>
+                  <li id="contactterakhir">
+                    <span><i class="fas fa-envelope"></i></span>
+                    <p>support@nativatalk.com</p>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </footer>
+        <!-- FOOTER -->
+
+        <!-- COPYRIGHT -->
+        <div class="copyright-wrapper">
+          <div class="container">
+            <p>Copyright © 2021 NativaTalk. All Rights Reserved.</p>
+          </div>
+        </div>
+        <!-- COPYRIGHT -->
+
+      </div>
+    </main>
+
+    <!-- JAVASCRIPT -->
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+
+    <!-- CDNJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+    <!-- Aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- IonIcons -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <!-- Lordicon -->
+    <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+
+    <!-- My JS -->
+    <script src="../JS/script.js"></script>
+    <!-- JAVASCRIPT -->
+
+  </body>
+</html>
